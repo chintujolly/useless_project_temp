@@ -54,7 +54,7 @@ The desktop shell manages windows, the taskbar and applications. Zustand is used
 
 The applications are connected through the shared state instead of functioning as completely separate pages. For example, a Kola created through the Terminal can appear in the Kola Manager.
 # Installation
-```bash
+
 git clone https://github.com/chintujolly/thenga-os.git
 cd thenga-os
 npm install
