@@ -70,17 +70,31 @@ The screenshots below show the main parts of the project and how the different c
 
 # Screenshots (Add at least 3)
 
-*Add caption explaining what this shows*
+![THENGA OS desktop](demo/thenga-desktop.png.png)
+*The THENGA OS desktop shows the pixel-art workspace, open system windows, taskbar, and coconut-themed applications.*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![THENGA OS terminal](demo/thenga-terminal.png.png)
+*The terminal demonstrates command-driven interaction with the simulated operating system and its virtual filesystem.*
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Kola Manager](demo/kola-manager.png.png)
+*Kola Manager shows the application workflow for viewing and managing coconuts created inside THENGA OS.*
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+```mermaid
+flowchart TD
+	User[User] --> Desktop[Desktop Shell]
+	Desktop --> Taskbar[Taskbar and Windows]
+	Desktop --> Apps[THENGA OS Applications]
+	Apps --> Terminal[Terminal]
+	Apps --> Kola[Kola Manager]
+	Apps --> Tools[System Tools]
+	Terminal --> Store[Zustand Store]
+	Kola --> Store
+	Tools --> Store
+	Store --> Files[Simulated Filesystem]
+	Store --> Storage[Browser Local Storage]
+```
+*The workflow shows how user actions move through the desktop shell and applications into shared Zustand state, the simulated filesystem, and browser persistence.*
 
 
 
