@@ -42,3 +42,6 @@ next-env.d.ts
 
 # git copy
 /.git copy/
+
+# local demo recording exceeds GitHub's file-size limit
+/demo/thengaosscreenrec.mp4
